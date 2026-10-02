@@ -1,0 +1,9 @@
+.env
+notes.txt
+.venv/
+__pycache__/
+*.pyc
+hitchhikers_guide.pdf
+NOTES_LOCAL_ONLY.md
+files
+docker-compose.yml
