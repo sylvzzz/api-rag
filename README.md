@@ -36,6 +36,8 @@ ls /usr/share/postgresql/*/extension/vector*
 
 If nothing shows up: `sudo apt install postgresql-18-pgvector`
 
+Or pull the docker image for PostgresSQL following the steps bellow.
+
 ## Setup
 
 Create the role and database:
@@ -107,6 +109,11 @@ Both clients set a 30 second timeout. Without it a provider that stops respondin
 To move the chat model to another provider, change `LLM_BASE_URL` and `LLM_API_KEY`. Any OpenAI-compatible endpoint works, which is most of them.
 
 ## Running
+
+```bash
+make docker-db       # creates the db in an isolated docker container
+make docker-down-db   # stops the container
+```
 
 ```bash
 make server
