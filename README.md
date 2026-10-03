@@ -110,11 +110,13 @@ To move the chat model to another provider, change `LLM_BASE_URL` and `LLM_API_K
 
 ## Running
 
+### Database (Docker)
 ```bash
 make docker-db       # creates the db in an isolated docker container
 make docker-down-db   # stops the container
 ```
 
+### API
 ```bash
 make server
 ```
